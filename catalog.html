@@ -7,7 +7,7 @@
   <body>
     <header>
       <a href="index.html">
-      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65"alt="Логотип компании">
+      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
       </a>
       <nav class="main-navigation">
         <ul>
@@ -23,33 +23,141 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section>
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Здесь будет форма-->
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+            <input type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
+            <label for="adaptive-filter">Адаптивная</label>
+              </li>
+              <li  tabindex="0">
+            <input type="radio" name="grid-type" value="fixed" id="fixed-filter">
+            <label for="fixed-filter">Фиксированная</label>
+              </li>
+              <li  tabindex="0">
+            <input type="radio" name="grid-type" value="stretch" id="stretch-filter">
+            <label for="stretch-filter">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+              <li>
+                <input type="checkbox"  name="slider" id="slider-filter" checked>
+                <label for="slider-filter">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox"  name="features-block" id="features-filter">
+                <label for="features-filter">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox"  name="news" id="news-filter" checked>
+                <label for="news-filter">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox"  name="gallery" id="gallery-filter">
+                <label for="gallery-filter">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox"  name="basket" id="basket-filter">
+                <label for="basket-filter">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+            <button type="submit">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <img class="catalog-item-1" src="img/sedona.jpg" width="360" height="576" alt="Sedona">
+            <article class="catalog-item-popup">
+              <a href="#">
+              <h3>Sedona</h3>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button type="button">9 900 руб</button>
+            </article>
             </li>
             <li class="catalog-item">
               <img class="catalog-item-2" src="img/pink.jpg" width="360" height="576" alt="Pink">
+              <article class="catalog-item-popup">
+                <a href="#">
+                <h3>Pink</h3>
+                </a>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <button type="button">9 900 руб</button>
+              </article>
             </li>
             <li class="catalog-item">
               <img class="catalog-item-3" src="img/barbershop.jpg" width="360" height="576" alt="Borodinski">
+              <article class="catalog-item-popup">
+                <a href="#">
+                <h3>Barbershop</h3>
+                </a>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <button type="button">9 900 руб</button>
+              </article>
             </li>
             <li class="catalog-item">
               <img class="catalog-item-4" src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+              <article class="catalog-item-popup">
+                <a href="#">
+                <h3>Mishka</h3>
+                </a>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <button type="button">9 900 руб</button>
+              </article>
             </li>
             <li class="catalog-item">
               <img class="catalog-item-5" src="img/aplus.jpg" width="360" height="576" alt="A+">
+              <article class="catalog-item-popup">
+                <a href="#">
+                <h3>A Plus</h3>
+                </a>
+                <p>Лендинг курсов повышения квалификации</p>
+                <button type="button">9 900 руб</button>
+              </article>
             </li>
             <li class="catalog-item">
               <img class="catalog-item-6" src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+              <article class="catalog-item-popup">
+                <a href="#">
+                <h3>Кваст</h3>
+                </a>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <button type="button">9 900 руб</button>
+              </article>
             </li>
           </ul>
         </section>
+        <section class="feedback">
+          <h2 class="feedback-title">Напишите нам</h2>
+          <form class="feedback=form" action="https://echo.htmlacademy.ru" method="post">
+            <button type="button">Закрыть</button>
+            <p>
+              <label for="feedback-your-name">Ваше имя</label>
+              <input id="feedback-your-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="feedback-mail">Ваш e-mail:</label>
+              <input id="feedback-mail" type="text" name="e-mail" value="" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="feedback-textarea">Текст письма</label>
+              <textarea id="feedback-textarea" name="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit">Отпрввить</button>
+          </form>
+        </section>
         <section class="map">
+          <h2 class="vissually-hidden">Как до нас добраться</h2>
+          <p>
           <img src="img/map.png" width="1440" height="416" alt="Как к нам добраться">
+        </p>
         </section>
       </main>
       <footer class="main-footer">

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65"alt="Логотип компании">
+      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
       <nav class="main-navigation">
         <ul>
           <li><a class="main-navigation-link" href="#">Студия</a></li>
@@ -76,8 +76,30 @@
           <img class="partners-logo" src="img/logo-4.png" width="173" height="84" alt="Mishka">
         </a>
       </section>
+      <section class="feedback">
+        <h2 class="feedback-title">Напишите нам</h2>
+        <form class="feedback=form" action="https://echo.htmlacademy.ru" method="post">
+          <button type="button">Закрыть</button>
+          <p>
+            <label for="feedback-your-name">Ваше имя</label>
+            <input id="feedback-your-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="feedback-mail">Ваш e-mail:</label>
+            <input id="feedback-mail" type="text" name="e-mail" value="" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="feedback-textarea">Текст письма</label>
+            <textarea id="feedback-textarea" name="text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отпрввить</button>
+        </form>
+      </section>
       <section class="map">
+        <h2 class="vissually-hidden">Как до нас добраться</h2>
+        <p>
         <img src="img/map.png" width="1440" height="416" alt="Как к нам добраться">
+      </p>
       </section>
     </main>
     <footer class="main-footer">

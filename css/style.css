@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+header{
+  background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation ul,
+.main-footer ul {
+list-style: none;
+}
+
+.main-navigation a {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+.main-navigation a:focus {
+  border:
+}
+
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.page-title{
+  text-align:center;
+
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+
+  background-color: #eeeeee;
+
+}
+
+.products-list {
+  list-style: none;
+}
+
+.products-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.products-item .btn{
+  font: inherit;
+  color:#ffffff;
+}
+
+.button-sites {
+  background-color: #fb565a;
+}
+
+.button-application {
+  background-color: #00ca74;
+}
+.button-presentation {
+  background-color: #efc84a;
+}
+
+.button-sites:hover {
+  background-color: #e74246;
+}
+
+.button-application:hover {
+  background-color: #00bc6c;
+}
+.button-presentation:hover {
+  background-color: #eab534;
+}
+
+.button-sites:active {
+  background-color: #d7373b;
+}
+
+.button-application:active {
+  background-color: #00aa62;
+}
+.button-presentation:active {
+  background-color: #e5a722;
+}
+
+.catalog-item-popup {
+ display: none;
+}
+
+.form legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.form ul {
+  list-style: none;
+}
+
+.form label {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #eeeeee;
+}
+
+.form button:hover {
+  background-color: #dfdfdf;
+}
+
+.form button:active {
+  opacity: 0.3;
+  background-color: #d5d5d5;
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.features-table caption {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.features-table th {
+font-size: 45px;
+line-height: 10.06px;
+color: #000000;
+}
+
+.features-table td {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback {
+  display: none;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer-social p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}

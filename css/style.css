@@ -22,7 +22,7 @@ header{
 
 .main-navigation ul,
 .main-footer ul {
-list-style: none;
+  list-style: none;
 }
 
 .main-navigation a {
@@ -34,9 +34,6 @@ list-style: none;
 
 .main-navigation a:hover {
   color: #fb565a;
-}
-.main-navigation a:focus {
-  border:
 }
 
 .main-navigation a:active {
@@ -104,7 +101,7 @@ list-style: none;
 }
 
 .catalog-item-popup {
- display: none;
+   display: none;
 }
 
 .form legend {
@@ -149,9 +146,9 @@ list-style: none;
 }
 
 .features-table th {
-font-size: 45px;
-line-height: 10.06px;
-color: #000000;
+  font-size: 45px;
+  line-height: 10px;
+  color: #000000;
 }
 
 .features-table td {

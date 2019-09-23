@@ -6,44 +6,47 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
-  </head>
   <body>
     <header>
-      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
-      <nav class="main-navigation">
-        <ul>
-          <li><a class="main-navigation-link" href="#">Студия</a></li>
-          <li><a class="main-navigation-link" href="#">Клиенты</a></li>
-          <li><a class="main-navigation-link" href="nerds-catalog.psd">Магазин</a></li>
-          <li><a class="main-navigation-link" href="#">Контакты</a></li>
-        </ul>
+      <div class="wrapper">
+        <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a class="main-navigation-link" href="#">Студия</a></li>
+            <li><a class="main-navigation-link" href="#">Клиенты</a></li>
+            <li><a class="main-navigation-link" href="nerds-catalog.psd">Магазин</a></li>
+            <li><a class="main-navigation-link" href="#">Контакты</a></li>
+          </ul>
         <a class="main-navigation-link basket" href="#">Корзина</a>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
       <section class="products">
         <h2 class="visually-hidden">Реализуемые продукты</h2>
-        <ul class="products-list">
-          <li class="products-item">
-            <h3>Веб-сайты</h3>
-            <img class="product-img" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <button class="btn button-sites" type="button" value="Заказать">Заказать</button>
-          </li>
-          <li class="products-item">
-            <h3>Приложения</h3>
-            <img class="product-img" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="btn button-application" type="button" value="Заказать">Заказать</button>
-          </li>
-          <li class="products-item">
-            <h3>Презентации</h3>
-            <img class="product-img" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="btn button-presentation" type="button" value="Заказать">Заказать</button>
-          </li>
-        </ul>
+        <div class="products-wrapper">
+          <ul class="products-list">
+            <li class="products-item">
+              <h3>Веб-сайты</h3>
+              <img class="product-img" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+              <button class="btn button-sites" type="button" value="Заказать">Заказать</button>
+            </li>
+            <li class="products-item">
+              <h3>Приложения</h3>
+              <img class="product-img" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="btn button-application" type="button" value="Заказать">Заказать</button>
+            </li>
+            <li class="products-item">
+              <h3>Презентации</h3>
+              <img class="product-img" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="btn button-presentation" type="button" value="Заказать">Заказать</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -67,8 +70,8 @@
       <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="partners-logo" src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
-      </a>
+          <img class="partners-logo" src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+        </a>
         <a href="#">
           <img class="partners-logo" src="img/logo-2.png" width="209" height="90" alt="Borodinski">
         </a>
@@ -99,21 +102,23 @@
         </form>
       </section>
       <section class="map">
-        <h2 class="vissually-hidden">Как до нас добраться</h2>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>
         <img src="img/map.png" width="1440" height="416" alt="Как к нам добраться">
-      </p>
+        </p>
       </section>
     </main>
     <footer class="main-footer">
+      <div class="footer-wrapper">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button"  href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграмм</a></li>
         </ul>
-      <div class="footer-social">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+        <div class="footer-social">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </div>
     </footer>
   </body>

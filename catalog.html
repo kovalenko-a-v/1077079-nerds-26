@@ -8,68 +8,71 @@
   </head>
   <body>
     <header>
-      <a href="index.html">
-      <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
-      </a>
-      <nav class="main-navigation">
-        <ul>
-          <li><a class="main-navigation-link" href="#">Студия</a></li>
-          <li><a class="main-navigation-link" href="#">Клиенты</a></li>
-          <li><a class="main-navigation-link" href="#">Магазин</a></li>
-          <li><a class="main-navigation-link" href="#">Контакты</a></li>
-        </ul>
-        <a class="main-navigation-link basket" href="#">Корзина</a>
-      </nav>
+      <div class="wrapper">
+        <a href="index.html">
+          <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
+        </a>
+        <nav class="main-navigation">
+          <ul>
+            <li><a class="main-navigation-link" href="#">Студия</a></li>
+            <li><a class="main-navigation-link" href="#">Клиенты</a></li>
+            <li><a class="main-navigation-link" href="#">Магазин</a></li>
+            <li><a class="main-navigation-link" href="#">Контакты</a></li>
+          </ul>
+          <a class="main-navigation-link basket" href="#">Корзина</a>
+        </nav>
+      </div>
     </header>
     <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <section class="form">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li>
-            <input type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
-            <label for="adaptive-filter">Адаптивная</label>
-              </li>
-              <li  tabindex="0">
-            <input type="radio" name="grid-type" value="fixed" id="fixed-filter">
-            <label for="fixed-filter">Фиксированная</label>
-              </li>
-              <li  tabindex="0">
-            <input type="radio" name="grid-type" value="stretch" id="stretch-filter">
-            <label for="stretch-filter">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Особенности</legend>
-            <ul>
-              <li>
-                <input type="checkbox"  name="slider" id="slider-filter" checked>
-                <label for="slider-filter">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox"  name="features-block" id="features-filter">
-                <label for="features-filter">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox"  name="news" id="news-filter" checked>
-                <label for="news-filter">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox"  name="gallery" id="gallery-filter">
-                <label for="gallery-filter">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox"  name="basket" id="basket-filter">
-                <label for="basket-filter">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
+      <div class="catalog-wrapper">
+        <section class="form">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
+                  <label for="adaptive-filter">Адаптивная</label>
+                </li>
+                <li  tabindex="0">
+                  <input type="radio" name="grid-type" value="fixed" id="fixed-filter">
+                  <label for="fixed-filter">Фиксированная</label>
+                </li>
+                <li  tabindex="0">
+                  <input type="radio" name="grid-type" value="stretch" id="stretch-filter">
+                  <label for="stretch-filter">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности</legend>
+              <ul>
+                <li>
+                  <input type="checkbox"  name="slider" id="slider-filter" checked>
+                  <label for="slider-filter">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox"  name="features-block" id="features-filter">
+                  <label for="features-filter">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox"  name="news" id="news-filter" checked>
+                  <label for="news-filter">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox"  name="gallery" id="gallery-filter">
+                  <label for="gallery-filter">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox"  name="basket" id="basket-filter">
+                  <label for="basket-filter">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
             <button type="submit">Показать</button>
-        </form>
+          </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
@@ -83,8 +86,8 @@
               <p>Информационный сайт для туристов</p>
               <button type="button">9 900 руб</button>
             </div>
-            </li>
-            <li class="catalog-item">
+          </li>
+          <li class="catalog-item">
               <img class="catalog-item-2" src="img/pink.jpg" width="360" height="576" alt="Pink">
               <div class="catalog-item-popup">
                 <a href="#">
@@ -134,7 +137,7 @@
                 <button type="button">9 900 руб</button>
               </div>
             </li>
-          </ul>
+        </ul>
         </section>
         <section class="feedback">
           <h2 class="feedback-title">Напишите нам</h2>
@@ -155,22 +158,26 @@
             <button type="submit">Отпрввить</button>
           </form>
         </section>
+          </div>
         <section class="map">
-          <h2 class="vissually-hidden">Как до нас добраться</h2>
+          <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>
           <img src="img/map.png" width="1440" height="416" alt="Как к нам добраться">
         </p>
+
         </section>
       </main>
       <footer class="main-footer">
+        <div class="footer-wrapper">
           <ul>
             <li><a class="social-button" href="#">Вконтакте</a></li>
             <li><a class="social-button"  href="#">Фейсбук</a></li>
             <li><a class="social-button" href="#">Инстаграмм</a></li>
           </ul>
-        <div class="footer-social">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <div class="footer-social">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
       </footer>
   </body>

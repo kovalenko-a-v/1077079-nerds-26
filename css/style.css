@@ -20,6 +20,7 @@ header{
   opacity: 0.3;
 }
 
+
 .main-navigation ul,
 .main-footer ul {
   list-style: none;
@@ -170,4 +171,144 @@ header{
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+
+
+
+
+
+
+
+
+/**Сеточные стили**/
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 3213px;
+}
+
+
+.wrapper {
+  width: 1160px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  margin-top: 49px;
+}
+
+
+.main-navigation ul  {
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation {
+  width: 800px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation .basket {
+  display: block;
+}
+
+.products-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+
+  width: 1100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item {
+  width: 300px;
+}
+
+.footer-wrapper {
+  width: 1160px;
+
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.main-footer ul {
+  width: 260px;
+
+  list-style: none;
+
+  margin-right: 33px;
+}
+
+.footer-social {
+  width: 544px;
+}
+
+.page-title {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 82px;
+  padding-bottom: 104px;
+}
+
+.catalog-wrapper {
+  margin: 0 auto;
+  padding: 0;
+
+  width: 1160px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 260px;
+}
+
+.catalog-list {
+ width: 760px;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.catalog-list li{
+
+  width: 360px;
+  height: 576px;
+  
+  margin-bottom: 33px;
+}
+
+.map p {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

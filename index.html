@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
@@ -131,21 +131,23 @@
       </section>
       <section class="feedback">
         <h2 class="feedback-title">Напишите нам</h2>
-        <form class="feedback=form" action="https://echo.htmlacademy.ru" method="post">
-          <button type="button">Закрыть</button>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <button class="feedback-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
           <p>
             <label for="feedback-your-name">Ваше имя</label>
             <input id="feedback-your-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
           </p>
           <p>
             <label for="feedback-mail">Ваш e-mail:</label>
-            <input id="feedback-mail" type="text" name="e-mail" value="" placeholder="email@example.com">
+            <input id="feedback-mail" type="text" name="e-mail" value="" placeholder="email@example.com" pattern="[a-z]{1,15}">
           </p>
           <p>
-            <label for="feedback-textarea">Текст письма</label>
+            <label for="feedback-textarea">Текст письма:</label>
             <textarea id="feedback-textarea" name="text" placeholder="В свободной форме"></textarea>
           </p>
-          <button type="submit">Отпрввить</button>
+          <button type="submit">Отправить</button>
         </form>
       </section>
       <section class="map">

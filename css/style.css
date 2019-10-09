@@ -705,11 +705,10 @@ a.arrow {
 .catalog-list svg {
  position: absolute;
 }
+
 .catalog-item-popup {
   display: none;
-
   position: absolute;
-  content="";
 
   width: 360px;
   height: 231px;

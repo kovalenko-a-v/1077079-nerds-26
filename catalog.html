@@ -14,7 +14,7 @@
           <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
         </a>
         <nav class="main-navigation">
-          <ul>
+          <ul class="site-navigation">
             <li><a class="main-navigation-link" href="#">Студия</a></li>
             <li><a class="main-navigation-link" href="#">Клиенты</a></li>
             <li><a class="main-navigation-link shop" href="#">Магазин</a></li>
@@ -44,23 +44,23 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
                 </div>
               </div>
             </fieldset>
             <fieldset class="fieldset-grid">
               <legend>Сетка:</legend>
               <ul>
-                <li>
-                  <input class="visually-hidden" type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
+                <li class="filter-option">
+                  <input class="filter-input filter-input-radio" type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
                   <label for="adaptive-filter">Адаптивная</label>
                 </li>
-                <li  tabindex="0">
-                  <input class="visually-hidden" type="radio" name="grid-type" value="fixed" id="fixed-filter">
+                <li class="filter-option">
+                  <input class=" filter-input filter-input-radio" type="radio" name="grid-type" value="fixed" id="fixed-filter">
                   <label for="fixed-filter">Фиксированная</label>
                 </li>
-                <li  tabindex="0">
-                  <input class="visually-hidden" type="radio" name="grid-type" value="stretch" id="stretch-filter">
+                <li class="filter-option">
+                  <input class="filter-input filter-input-radio" type="radio" name="grid-type" value="stretch" id="stretch-filter">
                   <label for="stretch-filter">Резиновая</label>
                 </li>
               </ul>
@@ -68,29 +68,24 @@
             <fieldset class="fieldset-features">
               <legend>Особенности:</legend>
               <ul>
-                <li>
-                  <input class="visually-hidden" type="checkbox"  name="slider" id="slider-filter" checked>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#b8b8b8" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#b8b8b8" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                <li class="filter-option">
+                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="slider" id="slider-filter" checked>
                   <label for="slider-filter">Слайдер</label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"  name="features-block" id="features-filter">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#b8b8b8" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <li class="filter-option">
+                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="features-block" id="features-filter">
                   <label for="features-filter">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"  name="news" id="news-filter" checked>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#b8b8b8" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#b8b8b8" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                <li class="filter-option">
+                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="news" id="news-filter" checked>
                   <label for="news-filter">Новости</label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"  name="gallery" id="gallery-filter">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#b8b8b8" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <li class="filter-option">
+                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="gallery" id="gallery-filter">
                   <label for="gallery-filter">Галерея</label>
                 </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"  name="basket" id="basket-filter">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#b8b8b8" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                <li class="filter-option">
+                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="basket" id="basket-filter">
                   <label for="basket-filter">Корзина</label>
                 </li>
               </ul>
@@ -193,27 +188,6 @@
           <li><a href="#">Следующая</a></li>
         </ul>
       </div>
-      <section class="feedback">
-        <h2 class="feedback-title">Напишите нам</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <button class="feedback-close" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <p>
-            <label for="feedback-your-name">Ваше имя</label>
-            <input id="feedback-your-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="feedback-mail">Ваш e-mail:</label>
-            <input id="feedback-mail" type="text" name="e-mail" value="" placeholder="email@example.com" pattern="[a-z]{1,15}">
-          </p>
-          <p>
-            <label for="feedback-textarea">Текст письма:</label>
-            <textarea id="feedback-textarea" name="text" placeholder="В свободной форме"></textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
       <section class="map">
         <div class="map-container">
           <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -262,5 +236,27 @@
         </div>
       </div>
     </footer>
+    <section class="feedback">
+      <h2 class="feedback-title">Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <button class="feedback-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <p>
+          <label for="feedback-your-name">Ваше имя</label>
+          <input id="feedback-your-name" type="text" name="your-name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-mail">Ваш e-mail:</label>
+          <input id="feedback-mail" type="text" name="e-mail" value="" placeholder="email@example.com" pattern="[a-z]{1,15}">
+        </p>
+        <p>
+          <label for="feedback-textarea">Текст письма:</label>
+          <textarea id="feedback-textarea" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -13,9 +14,11 @@ body {
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+
 }
 
-header{
+header {
+  min-width: 1160px;
   background-color: #eeeeee;
 }
 
@@ -97,6 +100,7 @@ header{
 .page-title-wrapper {
   margin: 0;
   margin-bottom: 55px;
+  min-width: 1160px;
 
   background-color: #eeeeee;
 }
@@ -114,6 +118,7 @@ header{
 
 .slider {
   position: relative;
+  min-width: 1160px;
 
   margin-bottom: 80px;
 
@@ -257,6 +262,7 @@ content: "";
 
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -315,13 +321,17 @@ content: "";
 
 .products-item .btn {
   width: 160px;
-  height: 50px;
-  padding: 0;
+  padding: 16px 0;
   margin-bottom: 80px;
+  text-align: center;
 
-  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+
   color:#ffffff;
+  font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
 
   border: none;
   border-radius: 3%;
@@ -387,6 +397,7 @@ content: "";
 
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -415,8 +426,6 @@ content: "";
   position: relative;
   padding-left: 36px;
   margin-bottom: 24px;
-
-  font-weight: 500;
 }
 
 .about-us li:last-child {
@@ -488,7 +497,7 @@ content: "";
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  /**align-items: center;**/
   width: 100%;
   margin-bottom: 78px;
 
@@ -519,16 +528,28 @@ content: "";
 .map {
   display: flex;
   flex-wrap: wrap;
-  width: 1440px;
   margin: 0 auto;
+
 }
 
-.map p:first-of-type {
-  margin: 0;
+.map-wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
 }
 
 .map-container {
   position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.map-container iframe {
+  position: absolute;
+  z-index: 2;
+  min-width: 1160px;
+
 }
 
 .map-contacts {
@@ -539,6 +560,7 @@ content: "";
   width: 319px;
 
   background-color: #ffffff;
+  z-index: 3;
 }
 
 .map-contacts b{
@@ -569,6 +591,7 @@ content: "";
 
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -597,6 +620,7 @@ content: "";
 
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 3;
 }
 
 .modal-show {
@@ -929,7 +953,6 @@ input[type="checkbox"] {
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
-  font-weight: 500;
 
   border: none;
   background-color: #eeeeee;
@@ -1201,6 +1224,7 @@ a.arrow {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
 
   background-color: #eeeeee;
   border-radius: 3%;
@@ -1243,8 +1267,6 @@ a.arrow {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-
-
 }
 
 .main-footer ul {
@@ -1294,9 +1316,11 @@ a.arrow {
   margin-top: 70px;
 }
 
+/**
 .footer-social {
   width: 544px;
 }
+**/
 
 .footer-social p {
   margin-top: 9px;

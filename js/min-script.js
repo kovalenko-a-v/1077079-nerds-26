@@ -1,0 +1,1 @@
+var open=document.querySelector(".map-button"),popup=document.querySelector(".feedback"),close=popup.querySelector(".feedback-close");open.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")});

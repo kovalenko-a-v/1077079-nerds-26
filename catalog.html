@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="wrapper">
         <a href="index.html">
           <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании">
@@ -52,15 +52,15 @@
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" value="adaptive" id="adaptive-filter" checked>
                   <label for="adaptive-filter">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <input class=" filter-input filter-input-radio" type="radio" name="grid-type" value="fixed" id="fixed-filter">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" value="fixed" id="fixed-filter">
                   <label for="fixed-filter">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="grid-type" value="stretch" id="stretch-filter">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-type" value="stretch" id="stretch-filter">
                   <label for="stretch-filter">Резиновая</label>
                 </li>
               </ul>
@@ -69,23 +69,23 @@
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="slider" id="slider-filter" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="slider" id="slider-filter" checked>
                   <label for="slider-filter">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="features-block" id="features-filter">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="features-block" id="features-filter">
                   <label for="features-filter">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="news" id="news-filter" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="news" id="news-filter" checked>
                   <label for="news-filter">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="gallery" id="gallery-filter">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="gallery" id="gallery-filter">
                   <label for="gallery-filter">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox"  name="basket" id="basket-filter">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="basket" id="basket-filter">
                   <label for="basket-filter">Корзина</label>
                 </li>
               </ul>
@@ -183,23 +183,23 @@
       <div  class="wrapper">
         <ul class="bread-crumbs">
           <li>1</li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li class="bread-crumbs-item"><a href="#">2</a></li>
+          <li class="bread-crumbs-item"><a href="#">3</a></li>
+          <li class="bread-crumbs-item"><a href="#">Следующая</a></li>
         </ul>
       </div>
       <section class="map">
         <div class="map-container">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571811737830!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957417!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571923592034!5m2!1sru!2sru" width="860" height="416" allowfullscreen=""></iframe>
           <div class="map-wrapper">
-            <img src="img/map.png" width="100%" height="416" alt="Как к нам добраться">
+            <img src="img/map.png" width="1440" height="416" alt="Как к нам добраться">
             <div class="map-contacts">
               <b>NЁRDS DESIGN STUDIO</b>
               <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8</p>
-              <p>тел. +7 (812) 275-75-75</p>
-              <button class="btn map-button" type="button">Напишите нам</button>
+              <a class="map-contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+              <a class="btn map-button" href="#">Напишите нам</a>
             </div>
             <div class="map-marker-wrapper">
               <img class="map-marker" src="img/map-marker.png" alt="Cанкт-Петербург,
@@ -258,6 +258,6 @@
         <button type="submit">Отправить</button>
       </form>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/min-script.js"></script>
   </body>
 </html>

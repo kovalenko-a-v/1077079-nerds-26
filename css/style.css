@@ -741,7 +741,8 @@ h2.feedback-title {
   border-color: #e74246;
 }
 
-.feedback input, label {
+.feedback input,
+.feedback label {
   display: block;
 }
 
